@@ -1,9 +1,11 @@
+import { ThemeProvider } from "./contexts/ThemeContext"
+
 function App() {
 
   return (
-    <>
-      <h1>Hello</h1>
-    </>
+    <ThemeProvider>
+      <div>Teste</div>
+    </ThemeProvider>
   )
 }
 
