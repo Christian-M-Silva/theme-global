@@ -1,0 +1,19 @@
+- Criar projeto com o vite e com ts
+- Criar contexto chamado ThemeContext
+    - Ele vai armazenar 2 valores "light" ou "dark"
+    - Criar uma função que vai alternar entre os 2 temas
+    - Criar o componente que envolverá toda aplicação, chamado ThemeProvider 
+    - Criar o hook para ser usado no componente que precisar dele
+- Envolver toda aplicação com esse componente criado
+- Criar uma tela inicial
+    - A cor de fundo dele será o inverso do tema atual que está no provider
+- Criar um componente chamado ButtonComponent
+    - Estilizar ele como eu quiser
+    - Ele terá o titulo Alternar Tema
+    - Quando ele for clicado ele altera o tema, usando o hook do ThemeContext
+- Criar um componente chamado ThemedBox 
+    - Que será uma div com borda arredondada
+    - Fundo será a cor do tema atual passada pelo provider
+    - Deverá ter um texto nela que será o nome do tema atual
+        - A cor do texto será o contrario ao do tema
+- Incluir o componente ThemedBox no meio da tela
