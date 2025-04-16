@@ -1,9 +1,9 @@
-- Criar projeto com o vite e com ts
-- Criar contexto chamado ThemeContext
-    - Ele vai armazenar 2 valores "light" ou "dark"
-    - Criar uma função que vai alternar entre os 2 temas
-    - Criar o componente que envolverá toda aplicação, chamado ThemeProvider 
-    - Criar o hook para ser usado no componente que precisar dele
+x Criar projeto com o vite e com ts
+x Criar contexto chamado ThemeContext
+    x Ele vai armazenar 2 valores "light" ou "dark"
+    x Criar uma função que vai alternar entre os 2 temas
+    x Criar o componente que envolverá toda aplicação, chamado ThemeProvider 
+    x Criar o hook para ser usado no componente que precisar dele
 - Envolver toda aplicação com esse componente criado
 - Criar uma tela inicial
     - A cor de fundo dele será o inverso do tema atual que está no provider
