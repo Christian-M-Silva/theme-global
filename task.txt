@@ -6,9 +6,9 @@ x Criar contexto chamado ThemeContext
     x Criar o hook para ser usado no componente que precisar dele
 x Envolver toda aplicação com esse componente criado
 X Criar uma tela inicial
-    - Criar interface IThemeValue
-            - currentTheme: 'zinc-950' | 'zinc-50'
-            - contraryTheme: 'zinc-950' | 'zinc-50'
+    X Criar interface IThemeValue
+            X currentTheme: 'zinc-950' | 'zinc-50'
+            X contraryTheme: 'zinc-950' | 'zinc-50'
     - No ThemeContext.tsx
         - Remover o ThemeValueType
         - O themeValue agora recebe IThemeValue
