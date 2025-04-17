@@ -4,7 +4,7 @@ function App() {
 
   return (
     <ThemeProvider>
-      <div className="">Teste</div>
+      <div>Teste</div>
     </ThemeProvider>
   )
 }

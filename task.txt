@@ -6,6 +6,15 @@ x Criar contexto chamado ThemeContext
     x Criar o hook para ser usado no componente que precisar dele
 x Envolver toda aplicação com esse componente criado
 X Criar uma tela inicial
+    - Criar interface IThemeValue
+            - currentTheme: 'zinc-950' | 'zinc-50'
+            - contraryTheme: 'zinc-950' | 'zinc-50'
+    - No ThemeContext.tsx
+        - Remover o ThemeValueType
+        - O themeValue agora recebe IThemeValue
+        - O useState de theme iniciará com o currentTheme sendo 'zinc-950' e outro 'zinc-50' 
+        - Na função toggleThemeValue eu farei a seguinte lógica
+            - Vejo se o theme.currentTheme atual é 'zinc-50' se sim ai o currentTheme 'zinc-950' e e outro 'zinc-50', senão é o inverso
     - A cor de fundo dele será o inverso do tema atual que está no provider
 - Criar um componente chamado ButtonComponent
     - Estilizar ele como eu quiser
