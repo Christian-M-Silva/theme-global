@@ -1,11 +1,12 @@
 import { ButtonComponent } from "./Components/ButtonComponent"
+import { ThemeBox } from "./Components/ThemeBox"
 import { ThemeProvider } from "./contexts/ThemeContext"
 
 function App() {
 
   return (
     <ThemeProvider>
-      <div>Teste</div>
+      <ThemeBox/>
       <ButtonComponent/>
     </ThemeProvider>
   )

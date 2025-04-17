@@ -14,7 +14,7 @@ type ChildrenPropType = {
     children: React.ReactNode
 }
 export const ThemeProvider = ({ children }: ChildrenPropType) => {
-    const [theme, setTheme] = useState<IThemeValue>({ CurrentTheme: 'zinc-950', ContraryTheme: 'zinc-50' });
+    const [theme, setTheme] = useState<IThemeValue>({ CurrentTheme: 'zinc-50', ContraryTheme: 'zinc-950' });
 
     function toggleThemeValue() {
         if (theme.CurrentTheme === 'zinc-50') {
@@ -26,7 +26,7 @@ export const ThemeProvider = ({ children }: ChildrenPropType) => {
 
     return (
         <ThemeContext.Provider value={{ themeValue: theme, setThemeValue: toggleThemeValue }}>
-            <div className={`bg-${theme.ContraryTheme} h-screen flex flex-col justify-center items-center`}>
+            <div className={` ${theme.ContraryTheme === 'zinc-950' ? 'bg-zinc-950' : 'bg-zinc-50'} h-screen flex flex-col justify-center items-center gap-1`}>
                 {children}
             </div>
         </ThemeContext.Provider>
