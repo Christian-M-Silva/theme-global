@@ -16,10 +16,10 @@ X Criar uma tela inicial
         x Na função toggleThemeValue eu farei a seguinte lógica
             x Vejo se o theme.currentTheme atual é 'zinc-50' se sim ai o currentTheme 'zinc-950' e e outro 'zinc-50', senão é o inverso
     x A cor de fundo dele será o inverso do tema atual que está no provider
-- Criar um componente chamado ButtonComponent
-    - Estilizar ele como eu quiser
-    - Ele terá o titulo Alternar Tema
-    - Quando ele for clicado ele altera o tema, usando o hook do ThemeContext
+x Criar um componente chamado ButtonComponent
+    x Estilizar ele como eu quiser
+    x Ele terá o titulo Alternar Tema
+    x Quando ele for clicado ele altera o tema, usando o hook do ThemeContext
 - Criar um componente chamado ThemedBox 
     - Que será uma div com borda arredondada
     - Fundo será a cor do tema atual passada pelo provider

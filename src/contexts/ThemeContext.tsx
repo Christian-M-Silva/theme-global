@@ -26,7 +26,7 @@ export const ThemeProvider = ({ children }: ChildrenPropType) => {
 
     return (
         <ThemeContext.Provider value={{ themeValue: theme, setThemeValue: toggleThemeValue }}>
-            <div className={`bg-${theme.ContraryTheme} h-screen`}>
+            <div className={`bg-${theme.ContraryTheme} h-screen flex flex-col justify-center items-center`}>
                 {children}
             </div>
         </ThemeContext.Provider>
