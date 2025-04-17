@@ -5,7 +5,7 @@ x Criar contexto chamado ThemeContext
     x Criar o componente que envolverá toda aplicação, chamado ThemeProvider 
     x Criar o hook para ser usado no componente que precisar dele
 x Envolver toda aplicação com esse componente criado
-- Criar uma tela inicial
+X Criar uma tela inicial
     - A cor de fundo dele será o inverso do tema atual que está no provider
 - Criar um componente chamado ButtonComponent
     - Estilizar ele como eu quiser
