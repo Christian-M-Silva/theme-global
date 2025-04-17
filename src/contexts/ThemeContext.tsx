@@ -1,9 +1,9 @@
 import React, { createContext, useContext, useState } from 'react';
+import { IThemeValue } from '../Interfaces/Interfaces';
 
-type ThemeValueType = "light" | "dark"
 
 type ThemeContextType = {
-    themeValue: ThemeValueType;
+    themeValue: IThemeValue;
     setThemeValue: () => void;
 };
 
@@ -14,10 +14,14 @@ type ChildrenPropType = {
     children: React.ReactNode
 }
 export const ThemeProvider = ({ children }: ChildrenPropType) => {
-    const [theme, setTheme] = useState<ThemeValueType>("dark");
+    const [theme, setTheme] = useState<IThemeValue>({CurrentTheme: 'zinc-950', ContraryTheme: 'zinc-50'});
 
     function toggleThemeValue() {
-        setTheme(theme === 'dark' ? 'light': 'dark')
+        if (theme.CurrentTheme === 'zinc-50') {
+            setTheme({CurrentTheme: 'zinc-950', ContraryTheme: 'zinc-50'})
+        }else{
+            setTheme({CurrentTheme: 'zinc-50', ContraryTheme: 'zinc-950'})
+        }
     }
 
     return (
